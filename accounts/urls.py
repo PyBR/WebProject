@@ -7,7 +7,6 @@ from django import forms
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^$', views.home),
     url(r'^login/$', TemplateView.as_view(template_name="accounts/login.html")),
     
