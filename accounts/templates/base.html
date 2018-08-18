@@ -1,7 +1,19 @@
 <html>
     <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
+      
+            <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+                    <div class="container">
+                      <a class="navbar-brand" href="#">Navbar</a>
+                      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+                        <a class="btn navbar-btn ml-2 text-white btn-link">
+                          <i class="fa d-inline fa-lg fa-user-circle-o"></i>&nbsp;Entrar</a>
+                      </div>
+                    </div>
+                  </nav>
+
         {% block head %}          
     
         <title>Base</title>
@@ -11,7 +23,7 @@
     
     
     <body>
-        
+            
         {% block body  %}
         <h1>Base</h1>
         {%endblock %}   
