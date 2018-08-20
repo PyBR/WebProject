@@ -1,0 +1,24 @@
+<!DOCKTYPE html>
+{% extends 'base.html' %}
+
+
+{% block head %}  
+
+{% endblock %}  
+
+
+
+{% block content %}    
+<div class="container">
+   
+    <ul>
+    <h1>Bem vindo a Poll List!</h1>
+     {% for poll in polls %}
+        <li>{{ poll }}</li>
+     {% endfor %}
+    </ul>
+</div>    
+        
+        
+{% endblock %}
+
