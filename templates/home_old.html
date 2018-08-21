@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+<head>
+{% block head %}
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+{% endblock %}
+
+ </head>    
+ {% block content %}   
+
+        <body style="background-color: #151515;">          
+            <div class="py-fluid w-100 p-4 h-75">
+              <div class="container-fluid TEX">
+                <div class="row">
+                  <div class="col-md-6"></div>
+                  <div class="col-md-6">
+                    <h1 class="">Crie sua conta para compartilhar...</h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 mr-auto">
+                    <p class="lead">Compartilhe o que quiser, com quiser!&nbsp;
+                      <br>
+                    </p>
+                    <p class="lead">Prezamos o poder da comunicação, valorizamos as interações humanas sem censura. Crie conteúdo, compartilhe, debata e colecione amigos em nossa plataforma.&nbsp;
+                      <br>
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <form action="" method="post">{% csrf_token %}
+                      <div class="form-group">
+                        <label>Endereço de email
+                          <br>
+                        </label>
+                        <input type="text" class="form-control" name="username" placeholder="Insira seu usuário">
+                        <small class="form-text text-muted">Nossa equipe não irá compartilhar seus dados com ninguém.&nbsp;</small>
+                      </div>
+                      <div class="form-group">
+                        <label>Senha
+                          <br>
+                        </label>
+                        <input type="password" class="form-control" name="password" placeholder="Senha"> </div>
+                      <button type="submit" class="btn btn-primary">Logar-se</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <div class="text-white h-25 mr-auto py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="list-inline text-center">
+                      <li class="list-inline-item">Termo de compromisso</li>
+                      <li class="list-inline-item">Privacidade</li>
+                      <li class="list-inline-item">Sobre nossa empresa</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 mt-3 text-center">
+                    <p>© Copyright 2018 - GADO DEMAIS.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endblock %}  
+      </body>
+
+ 
+

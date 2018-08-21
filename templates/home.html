@@ -1,75 +1,89 @@
 {% extends 'base.html' %}
 {% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+
 <head>
-{% block head %}
+    {% block head %}
+  <meta charset="UTF-8">
+  <title>A Pen by  Lucas</title>
+  
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
- 
-{% endblock %}
-
- </head>    
- {% block content %}   
-
-        <body style="background-color: #151515;">          
-            <div class="py-fluid w-100 p-4 h-75">
-              <div class="container-fluid TEX">
-                <div class="row">
-                  <div class="col-md-6"></div>
-                  <div class="col-md-6">
-                    <h1 class="">Crie sua conta para compartilhar...</h1>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-6 mr-auto">
-                    <p class="lead">Compartilhe o que quiser, com quiser!&nbsp;
-                      <br>
-                    </p>
-                    <p class="lead">Prezamos o poder da comunicação, valorizamos as interações humanas sem censura. Crie conteúdo, compartilhe, debata e colecione amigos em nossa plataforma.&nbsp;
-                      <br>
-                    </p>
-                  </div>
-                  <div class="col-md-6">
-                    <form action="" method="post">{% csrf_token %}
-                      <div class="form-group">
-                        <label>Endereço de email
-                          <br>
-                        </label>
-                        <input type="text" class="form-control" name="username" placeholder="Insira seu usuário">
-                        <small class="form-text text-muted">Nossa equipe não irá compartilhar seus dados com ninguém.&nbsp;</small>
-                      </div>
-                      <div class="form-group">
-                        <label>Senha
-                          <br>
-                        </label>
-                        <input type="password" class="form-control" name="password" placeholder="Senha"> </div>
-                      <button type="submit" class="btn btn-primary">Logar-se</button>
-                    </form>
-                  </div>
-                </div>
+  {% endblock %}
+</head>
+{% block content %} 
+  
+  <body>
+  <body style="background-color: #24292f;">
+    <div class="py-fluid w-100 p-4 h-75">
+      <div class="container-fluid TEX">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <h1 class="">Crie sua conta para compartilhar...</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mr-auto">
+            <p class="lead">Compartilhe o que quiser, com quiser!&nbsp;
+              <br>
+            </p>
+         <p class="lead">Prezamos o poder da comunicação, valorizamos as interações humanas sem censura.&nbsp;
+              <br>Crie conteúdo, compartilhe, debata e colecione amigos em nossa plataforma.&nbsp;
+              <br> </p>
+          </div>
+          <div class="col-md-6">
+            <form class="">
+              <div class="form-group">
+                <label>Endereço de email
+                  <br>
+                </label>
+                <input type="email" class="form-control" placeholder="Insira seu email">
+                <small class="form-text text-muted">Nossa equipe não irá compartilhar seus dados com ninguém.&nbsp;</small>
               </div>
-              <hr>
-            </div>
-            <div class="text-white h-25 mr-auto py-5">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <ul class="list-inline text-center">
-                      <li class="list-inline-item">Termo de compromisso</li>
-                      <li class="list-inline-item">Privacidade</li>
-                      <li class="list-inline-item">Sobre nossa empresa</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 mt-3 text-center">
-                    <p>© Copyright 2018 - GADO DEMAIS.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          {% endblock %}  
-      </body>
+              <div class="form-group">
+                <label>Senha
+                  <br>
+                </label>
+                <input type="password" class="form-control" placeholder="Senha"> </div>
+              <button type="submit" class="btn">Cadastre-se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="text-white h-25 mr-auto py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">Termo de compromisso</li>
+              <li class="list-inline-item">Privacidade</li>
+              <li class="list-inline-item">Sobre nossa empresa</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-3 text-center">
+            <p>© Copyright 2018 - GADO DEMAIS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+    
+    
+  
+  
+  </html>
+  
+  
+  
+{% endblock %}  
+</body>
 
- 
-
+</html>

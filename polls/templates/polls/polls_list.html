@@ -11,11 +11,16 @@
 {% block content %}    
 <div class="container">
    
-    <ul>
     <h1>Bem vindo a Poll List!</h1>
+    <ul>
      {% for poll in polls %}
         <li>{{ poll }}</li>
-     {% endfor %}
+    <ul>
+        {% for choice in poll.choice_set.all %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+    </ul>
+    {% endfor %}
     </ul>
 </div>    
         
