@@ -8,7 +8,7 @@ urlpatterns = [
   
   path('admin/', admin.site.urls),
   path('home/', views.home, name='home'),
-  path('accounts/', include('accounts.urls', namespace="accounts")),
+  path('', include('accounts.urls', namespace="accounts")),
   path('polls/', include('polls.urls', namespace='polls'))
   
 
